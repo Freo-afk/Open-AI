@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CODE AI — Помощник программиста</title>
+<link rel="stylesheet" href="koi.css">
+</head>
+<body>
+<header>
+<div class="logo">⚡ CODE AI</div>
+<div class="badge">YOUR PROGRAMMING ASSISTANT</div>
+</header>
+
+<main>
+<h1>Привет, программист! 👋</h1>
+<p class="subtitle">Пиши код, запускай его и экспериментируй.</p>
+
+<div class="layout">
+<section class="panel">
+<div class="panel-title">📝 Редактор кода</div>
+<div class="actions">
+<select id="language" onchange="changeCode()">
+<option value="html">HTML</option>
+<option value="css">CSS</option>
+<option value="js">JavaScript</option>
+</select>
+<button class="run" onclick="runCode()">▶ Запустить</button>
+<button class="clear" onclick="clearCode()">Очистить</button>
+</div>
+<textarea id="code" spellcheck="false"><h1 style="color:#8b5cf6">Привет, мир!</h1>
+<p>Мой первый проект на CODE AI 🚀</p>
+<button onclick="alert('Работает!')">Нажми меня</button></textarea>
+</section>
+
+<section class="panel">
+<div class="panel-title">🌐 Результат</div>
+<iframe id="preview" sandbox="allow-scripts"></iframe>
+</section>
+</div>
+
+<section class="panel chat">
+<div class="panel-title">🤖 CODE AI — Помощник</div>
+<div class="messages" id="messages">
+<div class="message">Привет! Я твой учебный помощник. Можешь спросить меня о HTML, CSS и JavaScript. Пока я работаю в демонстрационном режиме.</div>
+</div>
+<div class="chat-input">
+<input id="question" placeholder="Напиши вопрос..." onkeydown="if(event.key==='Enter')askAI()">
+<button class="run" onclick="askAI()">Отправить</button>
+</div>
+</section>
+</main>
+<footer>CODE AI © 2026 | Создано для программистов ❤️</footer>
+
+<script src="joi.js"></script>
+</body>
+</html>

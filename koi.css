@@ -1,0 +1,26 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090b13;color:#eee;font-family:Arial,sans-serif}
+header{height:70px;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #25283a}
+.logo{font-size:25px;font-weight:bold;color:#a78bfa}
+.badge{color:#a78bfa;font-size:12px}
+main{max-width:1200px;margin:auto;padding:30px 20px}
+h1{font-size:36px;margin-bottom:10px}
+.subtitle{color:#9296aa;margin-bottom:30px}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:#141725;border:1px solid #292d43;border-radius:15px;overflow:hidden}
+.panel-title{padding:16px;border-bottom:1px solid #292d43;font-weight:bold}
+textarea{width:100%;height:330px;background:#0d101b;color:#b9f6ca;border:0;padding:18px;font:14px monospace;resize:vertical;outline:none}
+.actions{display:flex;gap:10px;padding:12px;flex-wrap:wrap}
+button{padding:12px 18px;border:0;border-radius:9px;cursor:pointer;font-weight:bold}
+.run{background:#8b5cf6;color:white}
+.clear{background:#292d43;color:white}
+select{background:#292d43;color:white;padding:10px;border:0;border-radius:8px}
+iframe{width:100%;height:330px;background:white;border:0}
+.chat{margin-top:25px}
+.messages{height:230px;overflow:auto;padding:15px;color:#ccc;line-height:1.6}
+.message{padding:12px;background:#20243a;border-radius:10px;margin-bottom:10px;white-space:pre-wrap}
+.user{background:#40306a}
+.chat-input{display:flex;gap:10px;padding:12px}
+.chat-input input{flex:1;min-width:0;background:#0d101b;border:1px solid #333750;color:white;padding:13px;border-radius:9px}
+footer{text-align:center;padding:30px;color:#777}
+@media(max-width:750px){.layout{grid-template-columns:1fr}h1{font-size:28px}}
